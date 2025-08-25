@@ -41,5 +41,5 @@ df_u1000 = df[df['発電出力（kW）'] <= 1000]
 
 ## 5. 最大値
 ```
-df[df['score'] == df['score'].max()]
+print(df[df['発電出力（kW）'] == df['発電出力（kW）'].max()].to_string())
 ```
