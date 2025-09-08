@@ -54,5 +54,8 @@ for col in ['発電出力（kW）', '太陽電池の合計出力（kW）']:
 denom = PlantCapa['太陽電池の合計出力（kW）'].replace(0, pd.NA)
 
 PlantCapa['出力比'] = PlantCapa['発電出力（kW）'] / denom
+
+# 複数列を参照する場合はリストで渡す（二重ブラケット）
+print(PlantCapa[['発電出力（kW）', '太陽電池の合計出力（kW）', '出力比']].head(100).to_string())
 ```
 
