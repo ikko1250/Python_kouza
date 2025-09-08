@@ -31,3 +31,5 @@ sns.histplot(df_pv, x='発電出力（kW）', bins=30, color="orange")
 plt.title("Histogram of Power Output(<=1000kW) for Solar Power")
 plt.savefig("/home/ubuntu/cur/program/Teaching/1/サンプルコード/1-3/発電出力_histogram(<=1000kW)_solar.png")
 plt.clf() 
+
+print(df[df['発電出力（kW）'] == df['発電出力（kW）'].max()].to_string())
